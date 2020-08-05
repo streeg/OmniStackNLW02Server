@@ -16,6 +16,8 @@ const app = express();
 //Route Params: Identificar qual recurso eu quero atualizar ou deletar
 //Query Params: Paginação, filtros, ordenação
 
+
 app.use(express.json());
+app.use(cors());
 app.use(routes);    
 app.listen(3333);
